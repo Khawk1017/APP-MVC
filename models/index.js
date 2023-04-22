@@ -1,13 +1,24 @@
+const { Sequelize } = require('sequelize')
 const User = require('./User');
-const Project = require('./Project');
+const Articles = require('./Article');
+const Pointers = require('./Pointers');
 
-User.hasMany(Project, {
+User.hasMany(Articles, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
+User.hasMany(Pointers, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE"
+});
+
+Articles.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Project };
+ Pointers.belongsTo(User, {
+    foreignKey: "user_id"
+ })
+
+module.exports = { User, Articles, Pointers };
