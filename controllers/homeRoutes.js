@@ -50,6 +50,43 @@ router.get('/pointers', async (req, res) => {
   }
 });
 
+router.get('/newpointers', async (req, res) => {
+  try {
+    const pointersData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Pointers }],
+  });
+    const user = pointersData.get({ plain: true});
+
+    res.render('newpointers', {
+      ...user,
+      logged_in: req.session.logged_in
+    });
+} catch (err) {
+  console.log(err);
+  res.status(500).json(err)
+}
+
+});
+
+router.get('/newarticles', async (req, res) => {
+  try {
+    const articlesData = await User.findByPk(req.session.user_id,{
+      attributes: { exclude: ['password'] },
+      include: [{ model: Articles}],
+    });
+    const user = articlesData.get({ plain: true});
+
+    res.render('newsartilces', {
+      ...user,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 
 router.get('/articles/:id', async (req, res) => {
   try {
@@ -66,6 +103,28 @@ router.get('/articles/:id', async (req, res) => {
 
     res.render('articles', {
       ...articles,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/pointers/:id', async (req, res) => {
+  try {
+    const pointersData = await Pointers.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const pointers = pointersData.get({ plain: true});
+
+    res.render('pointers', {
+      ...pointers,
       logged_in: req.session.logged_in
     });
   } catch (err) {
