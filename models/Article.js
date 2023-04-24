@@ -20,7 +20,7 @@ Articles.init(
             allowNull: false,
         },
         content: {
-            type: DataTypes.TEXT,
+            type: DataTypes.TEXT('long'),
             allowNull: false,
         },
         user_id: {

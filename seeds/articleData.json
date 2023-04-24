@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Curing disease is the hot new field for AI talent",
+        "content": "A new wave of Silicon Valley computer scientists are leaving Big Tech for biotech, as experts predict advances in artificial intelligence will turn curing diseases into a software problem.  It turns out many of the same skills software engineers have been using on self-driving cars and other machine-learning challenges are in demand more than ever in bio sciences, where new AI algorithms are helping scientists create drugs from scratch using code.",
+        "user_id": "1"
+    },
+    {
+        "title": "Lyft to make signifcant cuts across ride-hailing company",
+        "content":"Lyft's newly appointed CEO David Risher told employees in an email Friday that the company is significantly reducing its workforce as part of a restructuring effort. Risher said the restructuring is part of Lyft's plan to “better meeting the needs of riders and drivers.” The company confirmed that it has not changed its guidance for the first quarter in spite of the upcoming layoffs.",
+        "user_id": "2"
+    },
+    {
+        "title": "Is there a future in light-powered AI chips?",
+        "content":"The growing compute power necessary to train sophisticated AI models such as OpenAI's ChatGPT might eventually run up against a wll with mainstream  chip technologies. It's already causing strian. Microsoft is reportedly facing an internal shortage of the server hardware needed to run it's AI and the scarcity is driving prices up. CNBC, speaking to analysts and technologists, estimates the current cost of training a ChatGPT-like model from scracth to be over $4 million. ",
+        "user_id":"3"
+    },
+    {
+        "title": "Stack Overflow Joins Twitter and Reddit in Charging AI Companies for Training Data",
+        "content": "Stack Overflow CEO Prashanth Chandrasekar said that the website plans to charge AI developers for access to its data as soon as halfway through this year. Stack Overflow is joining in on the AI resistance in forcing companies behind the rapidly advancing tech to pay up. The go-to resource for programmers is joining Twitter and Reddit in forcing AI compaines to pay for the data they use to trian their technology",
+        "user_id": "4"
+    },
+    {
+        "title": "Twitter Demands Advertisers Pay for a Blue Check or Spend $1,000 a Month",
+        "content": "Elon has deployed a lot of losing business strategies at Twitter. Now he's requiring a subscription to Twitter Blue for the privilege of running ads. One day after Elon Musk followed through on his months-long threat to remove blue checks from Twitter accounts that were verified before his tenure, Twitter sent advertisers an email telling them they can't advertise on the platform unless they subscribe to Twitter Blue. Accounts that already spend $1,000 or more a month will apparently be exempt.",
+        "user_id": "5"
+    },
+    {
+        "title": "TikTok's CEO Breaks Silence After Brutal Congressional Hearing",
+        "content": "In a fawning interview on the TED stage, CEO Shou Chew's made a pitch for why his app is good for the world. On Thursday, TikTok CEO Shou Zi Chew give his first interview since sparring with House lawmakers in a testy hearing back in March. Chew is one of dozens of business leaders speaking at the TED2023 “Possibility” conference held in Vancouver, Canada. In a softball discussion that saw that the interviewer praising Chew and asking for a selfie, the embattled CEO reiterated the ways TikTok is addressing public criticisms, and explained why his app is good for America and the world.",
+        "user_id":"1"
+    },
+    {
+        "title": "Unknown Government Agency Disobeyed White House, Using Front Company to Purchase Banned Spyware",
+        "content": "Less than a week after the White House blacklisted a controversial spyware vendor, a federal agency negotiated a secret contract with it via a front company.  In November of 2021, after years of ongoing scandals, the Biden administration formally blacklisted the NSO Group, shutting it off from American investment opportunities. But the New York Times now reports that not every part of the government was on the same page about that decision. Anybody paying close attention to the surveillance industry over the past several years knows that the NSO Group, a notorious spyware maker from Israel, is a major source of ongoing drama.",
+        "user_id": "2"
+    }
+    
+]
