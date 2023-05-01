@@ -11,6 +11,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+// serve static files from the public directory
+app.use(express.static('public'));
+
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
@@ -30,6 +34,10 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use((req, res, next) => {
+  res.locals.user_id = req.session.user_id   //assuming 'user_id" is stored in the session
+  next();
+})
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
