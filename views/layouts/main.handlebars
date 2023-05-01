@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   <link rel="stylesheet" href="/public/css/style.css">
-  <title>Recipe by Kameron</title>
+  <title>The Forum by Kameron</title>
 </head>
 <body>
   
@@ -30,18 +30,26 @@
           <li><a href="/">Home</a></li>
           <li><a href="/pointers">Pointers</a></li>
           <li href="/login">
-            <button type="button" class="button hollow topbar-responsive-button">Sign Up</button>
+            <button type="button" class="button hollow topbar-responsive-button">Login/Sign Up</button>
           </li>
           {{/if}}
         </ul>
       </div>
     </div>
   </nav>
+  <!-- End of Top Bar -->
+
+  <main>
+    {{{body}}}
+  </main>
   
   
 
-  
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-<script src="/public/js/test.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="/public/js/logout.js"></script>
 </body>
 </html>

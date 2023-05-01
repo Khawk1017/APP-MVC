@@ -10,3 +10,33 @@
       <input type="form-input" id="article-title" placeholder="Title" required>
     </div>
   </div>
+
+  <label>
+  Enter here:
+  <textarea type="form-input" id="article-content" placeholder="None" required></textarea>
+  <label for="fileUpload" class="button">Upload File</label>
+  <input type="file" id="fileUpload" class="show-for-sr">
+  </label>
+
+  <button id="submit" class="submit success button">Submit</button>
+</form>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+  {{!-- <script src="/js/postBtn.js"></script>
+  <script src="/js/newArticle.js"></script> --}}
+{{!-- <a href="/newarticle" class="button">Create Post</a> --}}
+
+{{/if}}
+<div class="text-center">
+  {{#each articles as |article|}}
+    <div class="medium-12 columns text-center">
+      <a href="/article/{{article.id}}">{{articles.title}}</a>
+      <p>{{articles.content}}</p>
+    </div>
+  {{/each}}
+</div>
+
+
+  {{!-- <script src="/public/js/postBtn.js"></script> --}}
