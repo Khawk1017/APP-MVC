@@ -19,16 +19,30 @@
     <div id="topbar-responsive" class="topbar-responsive-links">
       <div class="top-bar-right">
         <ul class="menu simple vertical medium-horizontal">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li>
-            <button type="button" class="button hollow topbar-responsive-button">Sign up</button>
+          <li><a href="/" id="homepage">Home</a></li>
+          <li><a href="/pointers">Pointers</a></li>
+          <li href="/login">
+            <button type="button" class="button hollow topbar-responsive-button">Sign Up</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
+  <div class="card-container position-absolute top-100 left-100 w-10 h-10">
+    <button class="button" data-open="myModal1">Create Post</button>
+    <div class="reveal" id="myModal1" data-reveal>
+      <h1> Your New Post</h1>
+      <form id="new-article-form">
+        <input type="hidden" id="user_id" value="<%= user_id %>">
+      <div class="grid-x grid-padding-x">
+        {{!-- <div class="small-3 cell">
+          <label for="title" class="text-right middle"></label>
+        </div> --}}
+        <div class="small-9 cell">
+          <input type="form-input" id="article-title" placeholder="Title" required>
+        </div>
+      </div>
   
 
   
