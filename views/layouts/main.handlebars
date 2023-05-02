@@ -21,17 +21,15 @@
         <ul class="menu simple vertical medium-horizontal">
           {{#if logged_in}}
            <li><a href="/" id="homepage">Home</a></li>
-          <li><a href="/pointers">Pointers</a></li>
+          <li><a href="">Pointers</a></li>
           <li><a href="/profile">Profile</a></li>
-          <li>
-            <button type="button" class="button hollow topbar-responsive-button">Logout</button>
-          </li>
+          <li><a href="/">Logout</a></li>
+          
           {{else}}
           <li><a href="/">Home</a></li>
           <li><a href="/pointers">Pointers</a></li>
-          <li href="/login">
-            <button type="button" class="button hollow topbar-responsive-button">Login/Sign Up</button>
-          </li>
+          <li><a href="/login">Login/Signup</a></li>
+          
           {{/if}}
         </ul>
       </div>
