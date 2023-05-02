@@ -4,18 +4,18 @@
     <button class="button" data-open="myModal1">Create Post</button>
     <div class="reveal" id="myModal1" data-reveal>
         <h1> Your New Post</h1>
-        <form id="new-tip-form">
+        <form id="new-pointer-form">
             <input type="hidden" id="user_id" value="<%= user_id %>">
             <div class="grid-x grid-padding-x">
                 <div class="small-9 cell">
-                    <input type="form-input" id="tips-title" placeholder="Title" required>
+                    <input type="form-input" id="pointers-title" placeholder="Title" required>
                 </div>
             </div>
 
 
             <label>
                 Enter here:
-                <textarea type="form-input" id="tips-content" placeholder="None" required></textarea>
+                <textarea type="form-input" id="pointers-content" placeholder="None" required></textarea>
                 <label for="fileUpload" class="button">Upload File</label>
                 <input type="file" id="fileUpload" class="show-for-sr">
             </label>
@@ -26,8 +26,8 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    {{!-- <script src="/js/postBtn.js"></script>
-    <script src="/js/newTips.js"></script> --}}
+    <script src="/js/postBtn.js"></script>
+    <script src="/js/newPointers.js"></script>
 
 
     {{/if}}
@@ -35,7 +35,7 @@
     <div class="text-center">
         {{#each pointer as |pointers|}}
         <div class="medium-12 columns text-center">
-            <a href="/tips/{{tips.id}}">{{pointers.title}}</a>
+            <a href="/pointers/{{pointers.id}}">{{pointers.title}}</a>
             <p>{{pointers.content}}</p>
         </div>
         {{/each}}
