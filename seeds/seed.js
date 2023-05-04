@@ -14,7 +14,7 @@ const seedDatabase = async () => {
   });
 
   for (const article of articleData) {
-    await Articles.create({
+    await qui.create({
       ...article,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
