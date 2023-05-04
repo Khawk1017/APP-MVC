@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize')
 const User = require('./User');
-const Articles = require('./Article');
+const Articles = require('./Articles');
 const Pointers = require('./Pointers');
 
 User.hasMany(Articles, {
