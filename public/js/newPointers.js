@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const user_id = document.querySelector('#user_id').value.trim();
 
         if (title && content) {
-            const response = await fetch(`/api/tips`, {
+            const response = await fetch(`/api/pointers`, {
                 method: 'POST',
                 body: JSON.stringify({title, content, user_id}),
                 headers: {
